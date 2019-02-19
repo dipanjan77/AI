@@ -42,6 +42,7 @@ namespace ToDoSkill
             IsFirstPage = false;
             IsLastPage = false;
             GoBackToStart = false;
+            CollectIndexRetry = false;
         }
 
         /// <summary>
@@ -138,7 +139,7 @@ namespace ToDoSkill
         /// <value>
         /// LuisResult.
         /// </value>
-        public ToDo LuisResult { get; set; }
+        public ToDoLU LuisResult { get; set; }
 
         /// <summary>
         /// Gets or sets GeneralLuisResult.
@@ -277,6 +278,14 @@ namespace ToDoSkill
         public bool GoBackToStart { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether gets or sets CollectIndexRetry.
+        /// </summary>
+        /// <value>
+        /// bool.
+        /// </value>
+        public bool CollectIndexRetry { get; set; }
+
+        /// <summary>
         /// Clear state.
         /// </summary>
         public void Clear()
@@ -309,6 +318,7 @@ namespace ToDoSkill
             IsFirstPage = false;
             IsLastPage = false;
             GoBackToStart = false;
+            CollectIndexRetry = false;
         }
     }
 }
